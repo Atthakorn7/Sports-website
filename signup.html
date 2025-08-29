@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>สมัครบัญชี — Brand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-login.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+  <div class="nav-inner">
+    <div class="brand" aria-label="Brand logo">
+      <a href="home.html" style="color: inherit; text-decoration: none;">Brand</a>
+    </div>
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="new.html">ใหม่</a>
+        <a href="#">ผู้ชาย</a>
+        <a href="#">ผู้หญิง</a>
+        <a href="#">เด็ก</a>
+        <a href="#">ขายดี</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap form-page">
+    <h1>สมัครบัญชี</h1>
+    <form class="auth-form" id="signupForm">
+      <label for="name">ชื่อ-นามสกุล</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">อีเมล</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">รหัสผ่าน</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <button type="submit" class="btn-primary">สมัครบัญชี</button>
+
+      <p class="form-note">
+        มีบัญชีอยู่แล้ว? 
+        <a href="login.html">เข้าสู่ระบบ</a>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2025 Brand</div>
+  </footer>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // ป้องกันการ submit แบบปกติ
+      window.location.href = 'home.html'; // ไปหน้าแรก
+    });
+  </script>
+
+</body>
+</html>
